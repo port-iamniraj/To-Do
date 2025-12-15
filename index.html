@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JavaScript/taskManager.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">
+            <Span class="green">To</Span>
+            <span>Do</span>
+        </h1>
+    </header>
+
+    <main class="main-data-container">
+        <div class="task-content">
+            <div class="main-title flex">
+                <div class="flex">
+                    <h3 class="day-heading">Today</h3>
+                    <i class="fa-solid fa-sun green"></i>
+                </div>
+
+                <div class="privious">
+                    <i class="fa-solid fa-arrow-left p-task" title="Privious tasks"></i>
+                </div>
+            </div>
+
+            <p class="motivation">Raise the bar by completing your goals !</p>
+
+            <div class="progress-bar-cover">
+                <div class="progress-bar"></div>
+            </div>
+
+            <div class="task-container scroll-custom">
+                <!-- <div class="task-box flex">
+                    <i class="fa-solid fa-circle-check check"></i>
+                    <i class="fa-regular fa-circle uncheck"></i>
+                    <div>complete this project</div>
+                </div> -->
+            </div>
+        </div>
+
+        <form class="input-container">
+            <input type="text" class="input-text" placeholder="Type here...">
+            <button type="submit" class="add-button"> Add Task</button>
+        </form>
+    </main>
+
+    <main class="privious-data-container hidden">
+        <div class="main-title flex">
+            <div class="flex">
+                <h3 class="day-heading">Completed tasks</h3>
+                <i class="fa-solid fa-sun green"></i>
+            </div>
+
+            <div class="privious">
+                <i class="fa-solid fa-arrow-left m-task" title="Privious tasks"></i>
+            </div>
+        </div>
+
+        <ul class="p-task-list"></ul>
+    </main>
+
+    <div class="pop-up displayNone">
+        <div class="pop-up-title">Congratulation ! You successfully completed 5 tasks.</div>
+        <div class="option-container">
+            <div class="save-progress opition-box">Save progress</div>
+            <div class="new-task opition-box">New tasks</div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="one-step">"Move one step ahead, today !"</p>
+        <p class="love">Made with <span><i class="fa-solid fa-heart-pulse heart"></i> by Niraj</span> </p>
+    </footer>
+</body>
+
+</html>

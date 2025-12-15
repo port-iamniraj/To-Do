@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 62.5%;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* ____________________________________________________________________________________________________ */
+
+/* Universal Selector */
+
+.green {
+    color: #89d42c;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.line-through {
+    text-decoration-line: line-through;
+}
+
+.pointerEventsNone {
+    pointer-events: none;
+}
+
+.delay1s {
+    transition-delay: 1s;
+}
+
+.hidden {
+    display: none;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* ____________________________________________________________________________________________________ */
+
+.heading {
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    text-align: center;
+}
+
+/* ____________________________________________________________________________________________________ */
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    min-height: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    background-color: #cecece;
+    color: #000000;
+    padding-inline: 2em;
+    padding-block: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-title {
+    font-size: 1.2rem;
+}
+
+.task-content {
+    height: 90%;
+}
+
+.privious:hover {
+    cursor: pointer;
+    color: #70c607;
+}
+
+.privious-data-container {
+    margin-inline: auto;
+    width: 80%;
+}
+
+main .motivation {
+    margin: 1em 0;
+    font-size: 0.8rem;
+}
+
+main .progress-bar-cover {
+    height: 22px;
+    background-color: #acd579;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #70c607;
+    border-radius: 10px;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+}
+
+main .task-container {
+    /* border: 2px solid black; */
+    height: 77%;
+    margin: 1rem 0;
+    overflow-y: auto;
+}
+
+main .task-container .task-box {
+    border: 2px solid #000;
+    background-color: #fff;
+    height: 10%;
+    width: 95%;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin: 1.2em auto;
+    padding: 1em;
+    overflow: hidden;
+}
+
+main .task-container .task-box .check-plus-tentcontent {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+}
+
+main .task-container .task-box .text-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: "nowrap";
+    line-clamp: 2;
+}
+
+main .task-container .uncheck,
+main .task-container .check {
+    flex-shrink: 0;
+}
+
+main .task-container .uncheck,
+main .task-container .check,
+main .task-container .cross:hover {
+    cursor: pointer;
+}
+
+main .task-container i {
+    font-size: 1.2rem;
+}
+
+.cross {
+    color: #ff0000;
+}
+
+main .input-container {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .input-container .input-text {
+    font-family: inherit;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    width: 79%;
+    border: none;
+    outline: none;
+}
+
+main .input-container .input-text::placeholder {
+    color: #cdcdcd;
+}
+
+main .input-container .add-button {
+    font-family: inherit;
+    width: 20%;
+    border-radius: 20px;
+    background-color: #89d42c;
+    /* border: none; */
+}
+
+main .add-button:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .one-step {
+    font-size: 1rem;
+    margin-block: 1em;
+}
+
+footer .love {
+    margin-block: 2em;
+}
+
+footer .love .heart {
+    color: #ff0000;
+}
+
+.p-task-list {
+    /* list-style-type: none; */
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    padding: 1em;
+}
+
+.pop-up {
+    min-height: 15vh;
+    padding: 2em;
+    width: 60%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+}
+
+.pop-up-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.option-container {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.opition-box {
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: #89d42c;
+    color: #000;
+}
+
+.opition-box:hover {
+    cursor: pointer;
+}
+
+.scroll-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #cecece;
+}
+
+.scroll-custom::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-custom::-webkit-scrollbar-track {
+    background: #cecece;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 8px;
+}
+
+/* ____________________________________________________________________________________________________ */
+
+@media (max-width : 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    main .task-container {
+        min-height: 58vh;
+    }
+}
