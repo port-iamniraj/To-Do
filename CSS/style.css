@@ -79,6 +79,9 @@ main {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #cecece;
     color: #000000;
     padding-inline: 2em;
@@ -93,6 +96,8 @@ main {
 
 .task-content {
     height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .privious:hover {
@@ -127,8 +132,11 @@ main .progress-bar-cover {
 
 main .task-container {
     /* border: 2px solid black; */
-    height: 77%;
+    min-height: 0;
     margin: 1rem 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     overflow-y: auto;
 }
 
